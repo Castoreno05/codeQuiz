@@ -45,8 +45,9 @@ startGame.addEventListener("click", function(event) {
     li3.appendChild(btnThree);
     li4.appendChild(btnFour);
     // Attributes for elements
-    h2El.setAttribute("style", "background-color:green; width:100%; height:200px; align-items:center; display:flex; flex-direction:column; justify-content:center;");
-    ordered.setAttribute("style", "background-color:green; width:100%; height:200px; align-items:center; display:flex; flex-direction:column;");
+    body.setAttribute("style", "background-color:green")
+    h2El.setAttribute("style", "width:100%; height:200px; align-items:center; display:flex; flex-direction:column; justify-content:center;");
+    ordered.setAttribute("style", "width:100%; height:200px; align-items:center; display:flex; flex-direction:column;");
     li1.setAttribute("style", "margin:auto; font-size:20.42px;");
     li2.setAttribute("style", "margin:auto; font-size:20px;");
     li3.setAttribute("style", "margin:auto; font-size:20px;");
@@ -95,8 +96,9 @@ btnOne.addEventListener("click", function() {
     li3.appendChild(btnThree);
     li4.appendChild(btnFour);
     // Attributes for elements
-    h2El.setAttribute("style", " background-color:teal; width:100%; height:200px; align-items:center; display:flex; flex-direction:column; justify-content:center;");
-    ordered.setAttribute("style", "background-color:teal; width:100%; height:200px; align-items:center; display:flex; flex-direction:column;");
+    body.setAttribute("style", "background-color:teal;")
+    h2El.setAttribute("style", "width:100%; height:200px; align-items:center; display:flex; flex-direction:column; justify-content:center;");
+    ordered.setAttribute("style", "width:100%; height:200px; align-items:center; display:flex; flex-direction:column;");
     li1.setAttribute("style", "margin:auto; font-size:20.42px;");
     li2.setAttribute("style", "margin:auto; font-size:20px;");
     li3.setAttribute("style", "margin:auto; font-size:20px;");
@@ -131,8 +133,9 @@ btnTwo.addEventListener("click", function() {
     li3.appendChild(btnThree);
     li4.appendChild(btnFour);
     // Attributes for elements
-    h2El.setAttribute("style", " background-color:red; width:100%; height:200px; align-items:center; display:flex; flex-direction:column; justify-content:center;");
-    ordered.setAttribute("style", "background-color:red; width:100%; height:200px; align-items:center; display:flex; flex-direction:column;");
+    body.setAttribute("style", "background-color:yellow;")
+    h2El.setAttribute("style", "width:100%; height:200px; align-items:center; display:flex; flex-direction:column; justify-content:center;");
+    ordered.setAttribute("style", "width:100%; height:200px; align-items:center; display:flex; flex-direction:column;");
     li1.setAttribute("style", "margin:auto; font-size:20.42px;");
     li2.setAttribute("style", "margin:auto; font-size:20px;");
     li3.setAttribute("style", "margin:auto; font-size:20px;");
@@ -167,8 +170,9 @@ btnThree.addEventListener("click", function() {
     li3.appendChild(btnThree);
     li4.appendChild(btnFour);
     // Attributes for elements
-    h2El.setAttribute("style", " background-color:yellow; width:100%; height:200px; align-items:center; display:flex; flex-direction:column; justify-content:center;");
-    ordered.setAttribute("style", "background-color:yellow; width:100%; height:200px; align-items:center; display:flex; flex-direction:column;");
+    body.setAttribute("style", "background-color:red;")
+    h2El.setAttribute("style", "width:100%; height:200px; align-items:center; display:flex; flex-direction:column; justify-content:center;");
+    ordered.setAttribute("style", "width:100%; height:200px; align-items:center; display:flex; flex-direction:column;");
     li1.setAttribute("style", "margin:auto; font-size:20.42px;");
     li2.setAttribute("style", "margin:auto; font-size:20px;");
     li3.setAttribute("style", "margin:auto; font-size:20px;");
@@ -203,10 +207,12 @@ btnFour.addEventListener("click", function() {
     li3.appendChild(btnThree);
     li4.appendChild(btnFour);
     // Attributes for elements
-    h2El.setAttribute("style", " background-color:pink; width:100%; height:200px; align-items:center; display:flex; flex-direction:column; justify-content:center;");
-    ordered.setAttribute("style", "background-color:pink; width:100%; height:200px; align-items:center; display:flex; flex-direction:column;");
+    body.setAttribute("style", "background-color:pink;")
+    h2El.setAttribute("style", "width:100%; height:200px; align-items:center; display:flex; flex-direction:column; justify-content:center;");
+    ordered.setAttribute("style", "width:100%; height:200px; align-items:center; display:flex; flex-direction:column;");
     li1.setAttribute("style", "margin:auto; font-size:20.42px;");
     li2.setAttribute("style", "margin:auto; font-size:20px;");
     li3.setAttribute("style", "margin:auto; font-size:20px;");
     li4.setAttribute("style", "margin:auto; font-size:20px;");
 });
+
