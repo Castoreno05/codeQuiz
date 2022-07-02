@@ -1,8 +1,13 @@
 header {
     display: flex;
     justify-content: space-around;
+    align-items: baseline;
 }
 
+.startGame {
+    display: flex;
+    margin-left: 24%; 
+}
 /* .container-fluid {
     display: flex;
     flex-direction: column;
