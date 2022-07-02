@@ -24,38 +24,44 @@ function timer() {
 
 var body = document.body;
 var h2El = document.createElement("h2");
-var
+var ordered = document.createElement("ol");
+// create ordered list items
+var li1 = document.createElement("li");
+var li2 = document.createElement("li");
+var li3 = document.createElement("li");
+var li4 = document.createElement("li");
+// creating buttons to go under the appended h2
+var btnOne = document.createElement("button");
+var btnTwo = document.createElement("button");
+var btnThree = document.createElement("button");
+var btnFour = document.createElement("button");
 
+// Text that is going inside the question "h2" and answers "li"
 h2El.textContent = "This is where the first question will go.";
+btnOne.textContent = "This is where the answers will go.";
+btnTwo.textContent = "This is where the answerts will go.";
+btnThree.textContent = "This is where the answerts will go.";
+btnFour.textContent = "This is where the answerts will go.";
 
 body.appendChild(h2El);
+body.appendChild(ordered);
+body.appendChild(btnOne);
+body.appendChild(btnTwo);
+body.appendChild(btnThree);
+body.appendChild(btnFour);
 
-// var buttons = document.querySelectorAll("buttons");
-// var buttons = document.querySelectorAll("btnOne")
+// Append list items into ordered element
+ordered.appendChild(li1);
+ordered.appendChild(li2);
+ordered.appendChild(li3);
+ordered.appendChild(li4);
+// Append buttons into list items
+li1.appendChild(btnOne);
+li2.appendChild(btnTwo);
+li3.appendChild(btnThree);
+li4.appendChild(btnFour);
 
-// buttons.setAttribute("style", "font-size: 40px;");
-// buttons.setAttribute("style", "justify-content: center;");
 
-// var btnOne = document.querySelector(".btnOne");
-// var btnTwo = document.querySelector(".btnTwo");
-// var btnThree = document.querySelector(".btnThree");
-// var btnFour = document.querySelector(".btnFour");
-
-// btnOne.addEventListener("click", function() {
-//     console.log("Hello")
-// });
-
-// btnTwo.addEventListener("click", function() {
-//     console.log("This is")
-// });
-
-// btnThree.addEventListener("click", function() {
-//     console.log("a button")
-// });
-
-// btnFour.addEventListener("click", function() {
-//     console.log("Test!!!!")
-// });
-
-// function answerOne() {
-// }
+// Using setAttribute to give elements style.
+h2El.setAttribute("style", "width:100%; height:200px; align-items:center; display:flex; flex-direction:column;");
+ordered.setAttribute("style", "width:100%; height:200px; align-items:center; display:flex; flex-direction:column;");
