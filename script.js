@@ -22,11 +22,11 @@ startGame.addEventListener("click", function(event) {
     event.preventDefault();
     // console.log("click");
     // Text that is going inside the question "h2" and answers "li"
-    h2El.textContent = "This is where the First question will go.";
-    btnOne.textContent = "This is where the answers will go.";
-    btnTwo.textContent = "This is where the answerts will go.";
-    btnThree.textContent = "This is where the answerts will go.";
-    btnFour.textContent = "This is where the answerts will go.";
+    h2El.textContent = "Commonly used data types do NOT include:";
+    btnOne.textContent = "String";
+    btnTwo.textContent = "Booloean";
+    btnThree.textContent = "Alerts";
+    btnFour.textContent = "Numbers";
 
     body.appendChild(h2El);
     body.appendChild(ordered);  
@@ -72,11 +72,11 @@ function timer() {
 btnOne.addEventListener("click", function() {
     // console.log("Helloooo Again!!");
     // Text that is going inside the question "h2" and answers "li"
-    h2El.textContent = "This is where the Second question will go";
-    btnOne.textContent = "This is where the answers will go.";
-    btnTwo.textContent = "This is where the answers will go.";
-    btnThree.textContent = "This is where the answers will go.";
-    btnFour.textContent = "This is where the answers will go.";
+    h2El.textContent = "The condition in an if/else statment is enclosed in ___.";
+    btnOne.textContent = "Quotes";
+    btnTwo.textContent = "Curly Brackets";
+    btnThree.textContent = "Parenthesis";
+    btnFour.textContent = "Square Brackets";
 
     body.appendChild(h2El);
     body.appendChild(ordered);  
@@ -108,11 +108,11 @@ btnOne.addEventListener("click", function() {
 btnTwo.addEventListener("click", function() {
     // console.log("Helloooo Again!!");
     // Text that is going inside the question "h2" and answers "li"
-    h2El.textContent = "This is where the Third question will go";
-    btnOne.textContent = "This is where the answers will go.";
-    btnTwo.textContent = "This is where the answers will go.";
-    btnThree.textContent = "This is where the answers will go.";
-    btnFour.textContent = "This is where the answers will go.";
+    h2El.textContent = "Arrays in JavaScript can be used to store.";
+    btnOne.textContent = "Numbers and strings";
+    btnTwo.textContent = "Other arrays";
+    btnThree.textContent = "Booleans";
+    btnFour.textContent = "All of the above";
 
     body.appendChild(h2El);
     body.appendChild(ordered);  
@@ -144,11 +144,11 @@ btnTwo.addEventListener("click", function() {
 btnThree.addEventListener("click", function() {
     // console.log("Helloooo Again!!");
     // Text that is going inside the question "h2" and answers "li"
-    h2El.textContent = "This is where the Fourth question will go";
-    btnOne.textContent = "This is where the answers will go.";
-    btnTwo.textContent = "This is where the answers will go.";
-    btnThree.textContent = "This is where the answers will go.";
-    btnFour.textContent = "This is where the answers will go.";
+    h2El.textContent = "String values must be closed within _____ when being assigned to a variable.";
+    btnOne.textContent = "Commas";
+    btnTwo.textContent = "Curly brackets";
+    btnThree.textContent = "Quotes";
+    btnFour.textContent = "Parenthesis";
 
     body.appendChild(h2El);
     body.appendChild(ordered);  
@@ -180,11 +180,11 @@ btnThree.addEventListener("click", function() {
 btnFour.addEventListener("click", function() {
     // console.log("Helloooo Again!!");
     // Text that is going inside the question "h2" and answers "li"
-    h2El.textContent = "This is where the Fifth question will go";
-    btnOne.textContent = "This is where the answers will go.";
-    btnTwo.textContent = "This is where the answers will go.";
-    btnThree.textContent = "This is where the answers will go.";
-    btnFour.textContent = "This is where the answers will go.";
+    h2El.textContent = "A very useful tool used in development and debugging for printing content to the debugger is:";
+    btnOne.textContent = "JavaScript";
+    btnTwo.textContent = "Terminal/Bash";
+    btnThree.textContent = "for loops";
+    btnFour.textContent = "console.log";
 
     body.appendChild(h2El);
     body.appendChild(ordered);  
