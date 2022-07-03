@@ -81,8 +81,8 @@ function buttonOne() {
     // Text that is going inside the question "h2" and answers "li"
     h2El.textContent = "The condition in an if/else statment is enclosed in ___.";
     btnOne.textContent = "Quotes";
-    btnTwo.textContent = "Curly Brackets";
-    btnThree.textContent = "Parenthesis";
+    btnTwo.textContent = "Parenthesis";
+    btnThree.textContent = "Curly Brackets";
     btnFour.textContent = "Square Brackets";
 
     body.appendChild(h2El);
@@ -164,9 +164,9 @@ function buttonThree() {
     // console.log("Helloooo Again!!");
     // Text that is going inside the question "h2" and answers "li"
     h2El.textContent = "String values must be closed within _____ when being assigned to a variable.";
-    btnOne.textContent = "Commas";
+    btnOne.textContent = "Quotes";
     btnTwo.textContent = "Curly brackets";
-    btnThree.textContent = "Quotes";
+    btnThree.textContent = "Commas";
     btnFour.textContent = "Parenthesis";
 
     body.appendChild(h2El);
