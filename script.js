@@ -18,13 +18,15 @@ var btnTwo = document.createElement("button");
 var btnThree = document.createElement("button");
 var btnFour = document.createElement("button");
 
-startGame.addEventListener("click", function(event) {
-    event.preventDefault();
+startGame.addEventListener("click", playGame);
+
+function playGame() {
+
     // console.log("click");
     // Text that is going inside the question "h2" and answers "li"
     h2El.textContent = "Commonly used data types do NOT include:";
     btnOne.textContent = "String";
-    btnTwo.textContent = "Booloean";
+    btnTwo.textContent = "Boolean";
     btnThree.textContent = "Alerts";
     btnFour.textContent = "Numbers";
 
@@ -54,7 +56,10 @@ startGame.addEventListener("click", function(event) {
     li4.setAttribute("style", "margin:auto; font-size:20px;");
 
     timer();
-});
+    btnThree.addEventListener("click", buttonThree);
+}
+    
+    
 
 
 function timer() {
@@ -70,7 +75,8 @@ function timer() {
 
 // Second Phase of questions ------------------------------------
 
-btnOne.addEventListener("click", function() {
+function buttonOne() {
+
     // console.log("Helloooo Again!!");
     // Text that is going inside the question "h2" and answers "li"
     h2El.textContent = "The condition in an if/else statment is enclosed in ___.";
@@ -103,11 +109,15 @@ btnOne.addEventListener("click", function() {
     li2.setAttribute("style", "margin:auto; font-size:20px;");
     li3.setAttribute("style", "margin:auto; font-size:20px;");
     li4.setAttribute("style", "margin:auto; font-size:20px;");
-});
 
+    btnTwo.addEventListener("click", buttonTwo);
+}
+    
 // Third Phase of questions ------------------------------------
 
-btnTwo.addEventListener("click", function() {
+
+function buttonTwo() {
+
     // console.log("Helloooo Again!!");
     // Text that is going inside the question "h2" and answers "li"
     h2El.textContent = "Arrays in JavaScript can be used to store.";
@@ -140,11 +150,17 @@ btnTwo.addEventListener("click", function() {
     li2.setAttribute("style", "margin:auto; font-size:20px;");
     li3.setAttribute("style", "margin:auto; font-size:20px;");
     li4.setAttribute("style", "margin:auto; font-size:20px;");
-});
+
+    btnFour.addEventListener("click", buttonFour);
+
+}
+    
+
 
 // Fourth Phase of questions ------------------------------------
 
-btnThree.addEventListener("click", function() {
+function buttonThree() {
+
     // console.log("Helloooo Again!!");
     // Text that is going inside the question "h2" and answers "li"
     h2El.textContent = "String values must be closed within _____ when being assigned to a variable.";
@@ -177,11 +193,18 @@ btnThree.addEventListener("click", function() {
     li2.setAttribute("style", "margin:auto; font-size:20px;");
     li3.setAttribute("style", "margin:auto; font-size:20px;");
     li4.setAttribute("style", "margin:auto; font-size:20px;");
-});
+
+    btnOne.addEventListener("click", buttonOne);
+
+}
+
 
 // Fifth Phase of questions ------------------------------------
 
-btnFour.addEventListener("click", function() {
+
+
+function buttonFour() {
+
     // console.log("Helloooo Again!!");
     // Text that is going inside the question "h2" and answers "li"
     h2El.textContent = "A very useful tool used in development and debugging for printing content to the debugger is:";
@@ -214,5 +237,11 @@ btnFour.addEventListener("click", function() {
     li2.setAttribute("style", "margin:auto; font-size:20px;");
     li3.setAttribute("style", "margin:auto; font-size:20px;");
     li4.setAttribute("style", "margin:auto; font-size:20px;");
-});
 
+    // End Game
+
+}
+    
+
+
+// myArray = [startGame, btnOne, btnTwo, btnThree, btnFour];
