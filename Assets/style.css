@@ -2,11 +2,16 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: baseline;
+    font-family: 'Permanent Marker', 'cursive';
+    font-size: 30px;
 }
 
 .startGame {
     display: flex;
     margin-left: 24%; 
+    font-family: 'Alfa Slab One', 'cursive';
+    background-color: green;
+    margin-top: 2%;
 }
 /* .container-fluid {
     display: flex;
@@ -14,3 +19,11 @@ header {
     align-items: center;
     
 } */
+
+.resetGame {
+    display: flex;
+    margin-top: 1%;
+    margin-left: 24%;
+    font-family: 'Alfa Slab One', 'cursive';
+    background-color: red;
+}

@@ -111,6 +111,7 @@ function buttonOne() {
     li4.setAttribute("style", "margin:auto; font-size:20px;");
 
     btnTwo.addEventListener("click", buttonTwo);
+    
 }
     
 // Third Phase of questions ------------------------------------
