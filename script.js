@@ -55,10 +55,10 @@ function playGame() {
     li2.setAttribute("style", "margin:auto; font-size:20px;");
     li3.setAttribute("style", "margin:auto; font-size:20px;");
     li4.setAttribute("style", "margin:auto; font-size:20px;");
-    btnOne.setAttribute("style", "background-color:darkblue; border:none;");
-    btnTwo.setAttribute("style", "background-color:darkblue; border:none;");
-    btnThree.setAttribute("style", "background-color:darkblue; border:none;");
-    btnFour.setAttribute("style", "background-color:darkblue; border:none;");
+    btnOne.setAttribute("style", "background-color:darkblue; border:none; color:black;");
+    btnTwo.setAttribute("style", "background-color:darkblue; border:none; color:black;");
+    btnThree.setAttribute("style", "background-color:darkblue; border:none; color:black;");
+    btnFour.setAttribute("style", "background-color:darkblue; border:none; color:black;");
 
     timer();
     btnThree.addEventListener("click", buttonThree);
@@ -100,10 +100,10 @@ function buttonOne() {
     btnFour.textContent = "Square Brackets";
 
     body.setAttribute("style", "background-color:violet;");
-    btnOne.setAttribute("style", "background-color:violet; border:none;");
-    btnTwo.setAttribute("style", "background-color:violet; border:none;");
-    btnThree.setAttribute("style", "background-color:violet; border:none;");
-    btnFour.setAttribute("style", "background-color:violet; border:none;");
+    btnOne.setAttribute("style", "background-color:violet; border:none; color:black;");
+    btnTwo.setAttribute("style", "background-color:violet; border:none; color:black;");
+    btnThree.setAttribute("style", "background-color:violet; border:none; color:black;");
+    btnFour.setAttribute("style", "background-color:violet; border:none; color:black;");
     
     btnTwo.addEventListener("click", buttonTwo);
 
@@ -123,10 +123,10 @@ function buttonTwo() {
     btnFour.textContent = "All of the above";
 
     body.setAttribute("style", "background-color:darkgrey;")
-    btnOne.setAttribute("style", "background-color:darkgrey; border:none;");
-    btnTwo.setAttribute("style", "background-color:darkgrey; border:none;");
-    btnThree.setAttribute("style", "background-color:darkgrey; border:none;");
-    btnFour.setAttribute("style", "background-color:darkgrey; border:none;");
+    btnOne.setAttribute("style", "background-color:darkgrey; border:none; color:black;");
+    btnTwo.setAttribute("style", "background-color:darkgrey; border:none; color:black;");
+    btnThree.setAttribute("style", "background-color:darkgrey; border:none; color:black;");
+    btnFour.setAttribute("style", "background-color:darkgrey; border:none; color:black;");
     
     btnFour.addEventListener("click", buttonFour);
 
@@ -146,10 +146,10 @@ function buttonThree() {
     btnFour.textContent = "Parenthesis";
 
     body.setAttribute("style", "background-color:darkorange;")
-    btnOne.setAttribute("style", "background-color:darkorange; border:none;");
-    btnTwo.setAttribute("style", "background-color:darkorange; border:none;");
-    btnThree.setAttribute("style", "background-color:darkorange; border:none;");
-    btnFour.setAttribute("style", "background-color:darkorange; border:none;");
+    btnOne.setAttribute("style", "background-color:darkorange; border:none; color:black;");
+    btnTwo.setAttribute("style", "background-color:darkorange; border:none; color:black;");
+    btnThree.setAttribute("style", "background-color:darkorange; border:none; color:black;");
+    btnFour.setAttribute("style", "background-color:darkorange; border:none; color:black;");
     
     btnOne.addEventListener("click", buttonOne);
 
@@ -169,10 +169,10 @@ function buttonFour() {
     btnFour.textContent = "console.log";
 
     body.setAttribute("style", "background-color:pink;")
-    btnOne.setAttribute("style", "background-color:pink; border:none;");
-    btnTwo.setAttribute("style", "background-color:pink; border:none;");
-    btnThree.setAttribute("style", "background-color:pink; border:none;");
-    btnFour.setAttribute("style", "background-color:pink; border:none;");
+    btnOne.setAttribute("style", "background-color:pink; border:none; color:black;");
+    btnTwo.setAttribute("style", "background-color:pink; border:none; color:black;");
+    btnThree.setAttribute("style", "background-color:pink; border:none; color:black;");
+    btnFour.setAttribute("style", "background-color:pink; border:none; color:black;");
 
     // End Game
 
