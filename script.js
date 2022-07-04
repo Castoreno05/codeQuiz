@@ -59,8 +59,7 @@ function playGame() {
     btnThree.addEventListener("click", buttonThree);
 }
 
-
-
+// Timer 
 
 function timer() {
     var timerInterval = setInterval(function () {
@@ -111,7 +110,6 @@ function buttonTwo() {
 }
 
 
-
 // Fourth Phase of questions ------------------------------------
 
 function buttonThree() {
@@ -133,8 +131,6 @@ function buttonThree() {
 
 // Fifth Phase of questions ------------------------------------
 
-
-
 function buttonFour() {
 
     // console.log("Helloooo Again!!");
@@ -150,7 +146,5 @@ function buttonFour() {
     // End Game
 
 }
-
-
 
 // myArray = [startGame, btnOne, btnTwo, btnThree, btnFour];
