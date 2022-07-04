@@ -179,3 +179,7 @@ function buttonFour() {
 }
 
 // myArray = [startGame, btnOne, btnTwo, btnThree, btnFour];
+
+
+// When inside the question. Find a way for only the correct selected answer to allow you to move forward.
+// Find a way to have the wrong answers prompt: "Incorrect"
