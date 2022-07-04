@@ -31,7 +31,7 @@ function playGame() {
     btnFour.textContent = "Numbers";
 
     body.appendChild(h2El);
-    body.appendChild(ordered);  
+    body.appendChild(ordered);
     body.appendChild(btnOne);
     body.appendChild(btnTwo);
     body.appendChild(btnThree);
@@ -47,8 +47,8 @@ function playGame() {
     li3.appendChild(btnThree);
     li4.appendChild(btnFour);
     // Attributes for elements
-    body.setAttribute("style", "background-color:green")
-    h2El.setAttribute("style", "width:100%; height:200px; align-items:center; display:flex; flex-direction:column; justify-content:center;");
+    body.setAttribute("style", "background-color:darkblue;")
+    h2El.setAttribute("style", "width:100%; height:200px; align-items:center; display:flex; flex-direction:column; justify-content:center; font-family: 'Permanent Marker', 'cursive';");
     ordered.setAttribute("style", "width:100%; height:200px; align-items:center; display:flex; flex-direction:column;");
     li1.setAttribute("style", "margin:auto; font-size:20.42px;");
     li2.setAttribute("style", "margin:auto; font-size:20px;");
@@ -58,16 +58,16 @@ function playGame() {
     timer();
     btnThree.addEventListener("click", buttonThree);
 }
-    
-    
+
+
 
 
 function timer() {
-    var timerInterval = setInterval(function() {
+    var timerInterval = setInterval(function () {
         secondsLeft--;
         timerEl.textContent = secondsLeft;
 
-        if(secondsLeft === 0) {
+        if (secondsLeft === 0) {
             clearInterval(timerInterval);
         }
     }, 1000);
@@ -85,35 +85,12 @@ function buttonOne() {
     btnThree.textContent = "Curly Brackets";
     btnFour.textContent = "Square Brackets";
 
-    body.appendChild(h2El);
-    body.appendChild(ordered);  
-    body.appendChild(btnOne);
-    body.appendChild(btnTwo);
-    body.appendChild(btnThree);
-    body.appendChild(btnFour);
-    // Append list items into ordered element
-    ordered.appendChild(li1);
-    ordered.appendChild(li2);
-    ordered.appendChild(li3);
-    ordered.appendChild(li4);
-    // Append buttons into list items
-    li1.appendChild(btnOne);
-    li2.appendChild(btnTwo);
-    li3.appendChild(btnThree);
-    li4.appendChild(btnFour);
-    // Attributes for elements
     body.setAttribute("style", "background-color:teal;")
-    h2El.setAttribute("style", "width:100%; height:200px; align-items:center; display:flex; flex-direction:column; justify-content:center;");
-    ordered.setAttribute("style", "width:100%; height:200px; align-items:center; display:flex; flex-direction:column;");
-    li1.setAttribute("style", "margin:auto; font-size:20.42px;");
-    li2.setAttribute("style", "margin:auto; font-size:20px;");
-    li3.setAttribute("style", "margin:auto; font-size:20px;");
-    li4.setAttribute("style", "margin:auto; font-size:20px;");
-
+    
     btnTwo.addEventListener("click", buttonTwo);
-    
+
 }
-    
+
 // Third Phase of questions ------------------------------------
 
 
@@ -127,35 +104,12 @@ function buttonTwo() {
     btnThree.textContent = "Booleans";
     btnFour.textContent = "All of the above";
 
-    body.appendChild(h2El);
-    body.appendChild(ordered);  
-    body.appendChild(btnOne);
-    body.appendChild(btnTwo);
-    body.appendChild(btnThree);
-    body.appendChild(btnFour);
-    // Append list items into ordered element
-    ordered.appendChild(li1);
-    ordered.appendChild(li2);
-    ordered.appendChild(li3);
-    ordered.appendChild(li4);
-    // Append buttons into list items
-    li1.appendChild(btnOne);
-    li2.appendChild(btnTwo);
-    li3.appendChild(btnThree);
-    li4.appendChild(btnFour);
-    // Attributes for elements
-    body.setAttribute("style", "background-color:yellow;")
-    h2El.setAttribute("style", "width:100%; height:200px; align-items:center; display:flex; flex-direction:column; justify-content:center;");
-    ordered.setAttribute("style", "width:100%; height:200px; align-items:center; display:flex; flex-direction:column;");
-    li1.setAttribute("style", "margin:auto; font-size:20.42px;");
-    li2.setAttribute("style", "margin:auto; font-size:20px;");
-    li3.setAttribute("style", "margin:auto; font-size:20px;");
-    li4.setAttribute("style", "margin:auto; font-size:20px;");
-
+    body.setAttribute("style", "background-color:darkgrey;")
+    
     btnFour.addEventListener("click", buttonFour);
 
 }
-    
+
 
 
 // Fourth Phase of questions ------------------------------------
@@ -170,31 +124,8 @@ function buttonThree() {
     btnThree.textContent = "Commas";
     btnFour.textContent = "Parenthesis";
 
-    body.appendChild(h2El);
-    body.appendChild(ordered);  
-    body.appendChild(btnOne);
-    body.appendChild(btnTwo);
-    body.appendChild(btnThree);
-    body.appendChild(btnFour);
-    // Append list items into ordered element
-    ordered.appendChild(li1);
-    ordered.appendChild(li2);
-    ordered.appendChild(li3);
-    ordered.appendChild(li4);
-    // Append buttons into list items
-    li1.appendChild(btnOne);
-    li2.appendChild(btnTwo);
-    li3.appendChild(btnThree);
-    li4.appendChild(btnFour);
-    // Attributes for elements
-    body.setAttribute("style", "background-color:red;")
-    h2El.setAttribute("style", "width:100%; height:200px; align-items:center; display:flex; flex-direction:column; justify-content:center;");
-    ordered.setAttribute("style", "width:100%; height:200px; align-items:center; display:flex; flex-direction:column;");
-    li1.setAttribute("style", "margin:auto; font-size:20.42px;");
-    li2.setAttribute("style", "margin:auto; font-size:20px;");
-    li3.setAttribute("style", "margin:auto; font-size:20px;");
-    li4.setAttribute("style", "margin:auto; font-size:20px;");
-
+    body.setAttribute("style", "background-color:darkorange;")
+    
     btnOne.addEventListener("click", buttonOne);
 
 }
@@ -214,35 +145,12 @@ function buttonFour() {
     btnThree.textContent = "for loops";
     btnFour.textContent = "console.log";
 
-    body.appendChild(h2El);
-    body.appendChild(ordered);  
-    body.appendChild(btnOne);
-    body.appendChild(btnTwo);
-    body.appendChild(btnThree);
-    body.appendChild(btnFour);
-    // Append list items into ordered element
-    ordered.appendChild(li1);
-    ordered.appendChild(li2);
-    ordered.appendChild(li3);
-    ordered.appendChild(li4);
-    // Append buttons into list items
-    li1.appendChild(btnOne);
-    li2.appendChild(btnTwo);
-    li3.appendChild(btnThree);
-    li4.appendChild(btnFour);
-    // Attributes for elements
     body.setAttribute("style", "background-color:pink;")
-    h2El.setAttribute("style", "width:100%; height:200px; align-items:center; display:flex; flex-direction:column; justify-content:center;");
-    ordered.setAttribute("style", "width:100%; height:200px; align-items:center; display:flex; flex-direction:column;");
-    li1.setAttribute("style", "margin:auto; font-size:20.42px;");
-    li2.setAttribute("style", "margin:auto; font-size:20px;");
-    li3.setAttribute("style", "margin:auto; font-size:20px;");
-    li4.setAttribute("style", "margin:auto; font-size:20px;");
 
     // End Game
 
 }
-    
+
 
 
 // myArray = [startGame, btnOne, btnTwo, btnThree, btnFour];
