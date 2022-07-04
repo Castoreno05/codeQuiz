@@ -8,10 +8,11 @@ header {
 
 .startGame {
     display: flex;
-    margin-left: 24%; 
+    margin-left: 22%; 
     font-family: 'Alfa Slab One', 'cursive';
     background-color: green;
     margin-top: 2%;
+    border-radius: 15px;
 }
 /* .container-fluid {
     display: flex;
@@ -22,8 +23,9 @@ header {
 
 .resetGame {
     display: flex;
-    margin-top: 1%;
-    margin-left: 24%;
+    margin-top: 1.5%;
+    margin-left: 22%;
     font-family: 'Alfa Slab One', 'cursive';
     background-color: red;
+    border-radius: 15px;
 }
