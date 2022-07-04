@@ -2,6 +2,7 @@
 var secondsLeft = 60;
 var timerEl = document.getElementById("timer");
 var startGame = document.querySelector("#startGame");
+var btnReset = document.querySelector("#resetGame");
 // console.log(startGame);
 
 var body = document.body;
@@ -57,6 +58,16 @@ function playGame() {
 
     timer();
     btnThree.addEventListener("click", buttonThree);
+}
+
+// Reset function and eventListener
+
+btnReset.addEventListener("click", resetGame);
+
+function resetGame() {
+
+    window.location.reload(true);
+
 }
 
 // Timer 
