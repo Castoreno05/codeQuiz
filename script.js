@@ -50,11 +50,15 @@ function playGame() {
     // Attributes for elements
     body.setAttribute("style", "background-color:darkblue;")
     h2El.setAttribute("style", "width:100%; height:200px; align-items:center; display:flex; flex-direction:column; justify-content:center; font-family: 'Permanent Marker', 'cursive';");
-    ordered.setAttribute("style", "width:100%; height:200px; align-items:center; display:flex; flex-direction:column;");
+    ordered.setAttribute("style", "width:100%; height:200px; align-items:center; display:flex; flex-direction:column; font-family: 'Permanent Marker', 'cursive';");
     li1.setAttribute("style", "margin:auto; font-size:20.42px;");
     li2.setAttribute("style", "margin:auto; font-size:20px;");
     li3.setAttribute("style", "margin:auto; font-size:20px;");
     li4.setAttribute("style", "margin:auto; font-size:20px;");
+    btnOne.setAttribute("style", "background-color:darkblue; border:none;");
+    btnTwo.setAttribute("style", "background-color:darkblue; border:none;");
+    btnThree.setAttribute("style", "background-color:darkblue; border:none;");
+    btnFour.setAttribute("style", "background-color:darkblue; border:none;");
 
     timer();
     btnThree.addEventListener("click", buttonThree);
@@ -95,7 +99,11 @@ function buttonOne() {
     btnThree.textContent = "Curly Brackets";
     btnFour.textContent = "Square Brackets";
 
-    body.setAttribute("style", "background-color:teal;")
+    body.setAttribute("style", "background-color:violet;");
+    btnOne.setAttribute("style", "background-color:violet; border:none;");
+    btnTwo.setAttribute("style", "background-color:violet; border:none;");
+    btnThree.setAttribute("style", "background-color:violet; border:none;");
+    btnFour.setAttribute("style", "background-color:violet; border:none;");
     
     btnTwo.addEventListener("click", buttonTwo);
 
@@ -115,6 +123,10 @@ function buttonTwo() {
     btnFour.textContent = "All of the above";
 
     body.setAttribute("style", "background-color:darkgrey;")
+    btnOne.setAttribute("style", "background-color:darkgrey; border:none;");
+    btnTwo.setAttribute("style", "background-color:darkgrey; border:none;");
+    btnThree.setAttribute("style", "background-color:darkgrey; border:none;");
+    btnFour.setAttribute("style", "background-color:darkgrey; border:none;");
     
     btnFour.addEventListener("click", buttonFour);
 
@@ -134,6 +146,10 @@ function buttonThree() {
     btnFour.textContent = "Parenthesis";
 
     body.setAttribute("style", "background-color:darkorange;")
+    btnOne.setAttribute("style", "background-color:darkorange; border:none;");
+    btnTwo.setAttribute("style", "background-color:darkorange; border:none;");
+    btnThree.setAttribute("style", "background-color:darkorange; border:none;");
+    btnFour.setAttribute("style", "background-color:darkorange; border:none;");
     
     btnOne.addEventListener("click", buttonOne);
 
@@ -153,6 +169,10 @@ function buttonFour() {
     btnFour.textContent = "console.log";
 
     body.setAttribute("style", "background-color:pink;")
+    btnOne.setAttribute("style", "background-color:pink; border:none;");
+    btnTwo.setAttribute("style", "background-color:pink; border:none;");
+    btnThree.setAttribute("style", "background-color:pink; border:none;");
+    btnFour.setAttribute("style", "background-color:pink; border:none;");
 
     // End Game
 
