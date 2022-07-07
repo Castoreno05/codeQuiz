@@ -167,15 +167,17 @@ function endGame() {
         body.appendChild(h1El);
         body.appendChild(paragraph);
 
-        paragraph.textContent = "This is the End of the game! Good Job!"
+        h1El.textContent = "SCORE:";
+        paragraph.textContent = totalScore;
+
+        paragraph.setAttribute("style", "font-size:35px; width:100%; height:200px; align-items:center; display:flex; flex-direction:column; font-family: 'Permanent Marker', 'cursive';");
+        h1El.setAttribute("style", "width:100%; height:200px; align-items:center; display:flex; flex-direction:column; justify-content:center; font-family: 'Permanent Marker', 'cursive';");
         // need to find a way to clear the timer at the end
 
         // Need to display the total score 
     }
 
-
-
-    console.log("This is your score")
+    console.log(totalScore);
 }
 
 // When inside the question. Find a way for only the correct selected answer to allow you to move forward.
