@@ -3,7 +3,7 @@ var questions = [
 
     {
         title: "Commonly used data types do NOT include:",
-        options: ["Quotes", "Parenthesis", "Curly Brackets", "Square Brackets"],
+        options: ["Quotes", "Parenthesis", "Alerts", "Square Brackets"],
         correctAnswer: "Alerts"
     },
 
@@ -73,7 +73,7 @@ function displayQuestion() {
 function handleClick(event) {
     if(questions[questionIndex].correctAnswer === event.target.innerHTML) {
         totalScore += 20;
-        // console.log(totalScore);
+        console.log(totalScore);
     }
     else {
         // reduce the timer
@@ -94,13 +94,7 @@ function playGame() {
     displayQuestion()
 
     // console.log("click");
-    // Text that is going inside the question "h2" and answers "li"
-    h2El.textContent = "Commonly used data types do NOT include:";
-    btnOne.textContent = "String";
-    btnTwo.textContent = "Boolean";
-    btnThree.textContent = "Alerts";
-    btnFour.textContent = "Numbers";
-
+   
     body.appendChild(h2El);
     body.appendChild(ordered);
     body.appendChild(btnOne);
@@ -125,10 +119,10 @@ function playGame() {
     li2.setAttribute("style", "margin:auto; font-size:20px;");
     li3.setAttribute("style", "margin:auto; font-size:20px;");
     li4.setAttribute("style", "margin:auto; font-size:20px;");
-    btnOne.setAttribute("style", "background-color:white; border:none; color:black;");
-    btnTwo.setAttribute("style", "background-color:white; border:none; color:black;");
-    btnThree.setAttribute("style", "background-color:white; border:none; color:black;");
-    btnFour.setAttribute("style", "background-color:white; border:none; color:black;");
+    btnOne.setAttribute("style", "background-color:white; border:none; color:black; font-size:35px;");
+    btnTwo.setAttribute("style", "background-color:white; border:none; color:black; font-size:35px;");
+    btnThree.setAttribute("style", "background-color:white; border:none; color:black; font-size:35px;");
+    btnFour.setAttribute("style", "background-color:white; border:none; color:black; font-size:35px;");
 
     timer();
     btnOne.addEventListener("click", handleClick);
@@ -146,6 +140,8 @@ function resetGame() {
     window.location.reload(true);
 
 }
+
+// need a function that will display the score
 
 // Timer 
 
