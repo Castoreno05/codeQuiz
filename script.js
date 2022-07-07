@@ -118,17 +118,17 @@ function playGame() {
     li3.appendChild(btnThree);
     li4.appendChild(btnFour);
     // Attributes for elements
-    body.setAttribute("style", "background-color:darkblue;")
+    // body.setAttribute("style", "background-color:darkgreen;")
     h2El.setAttribute("style", "width:100%; height:200px; align-items:center; display:flex; flex-direction:column; justify-content:center; font-family: 'Permanent Marker', 'cursive';");
     ordered.setAttribute("style", "width:100%; height:200px; align-items:center; display:flex; flex-direction:column; font-family: 'Permanent Marker', 'cursive';");
     li1.setAttribute("style", "margin:auto; font-size:20.42px;");
     li2.setAttribute("style", "margin:auto; font-size:20px;");
     li3.setAttribute("style", "margin:auto; font-size:20px;");
     li4.setAttribute("style", "margin:auto; font-size:20px;");
-    btnOne.setAttribute("style", "background-color:darkblue; border:none; color:black;");
-    btnTwo.setAttribute("style", "background-color:darkblue; border:none; color:black;");
-    btnThree.setAttribute("style", "background-color:darkblue; border:none; color:black;");
-    btnFour.setAttribute("style", "background-color:darkblue; border:none; color:black;");
+    btnOne.setAttribute("style", "background-color:white; border:none; color:black;");
+    btnTwo.setAttribute("style", "background-color:white; border:none; color:black;");
+    btnThree.setAttribute("style", "background-color:white; border:none; color:black;");
+    btnFour.setAttribute("style", "background-color:white; border:none; color:black;");
 
     timer();
     btnOne.addEventListener("click", handleClick);
