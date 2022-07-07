@@ -69,10 +69,10 @@ function playGame() {
     li2.setAttribute("style", "margin:auto; font-size:20px;");
     li3.setAttribute("style", "margin:auto; font-size:20px;");
     li4.setAttribute("style", "margin:auto; font-size:20px;");
-    btnOne.setAttribute("style", "background-color:white; border:none; color:black; font-size:35px;");
-    btnTwo.setAttribute("style", "background-color:white; border:none; color:black; font-size:35px;");
-    btnThree.setAttribute("style", "background-color:white; border:none; color:black; font-size:35px;");
-    btnFour.setAttribute("style", "background-color:white; border:none; color:black; font-size:35px;");
+    btnOne.setAttribute("style", "background-color:white; border:none; color:black; font-size:30px;");
+    btnTwo.setAttribute("style", "background-color:white; border:none; color:black; font-size:30px;");
+    btnThree.setAttribute("style", "background-color:white; border:none; color:black; font-size:30px;");
+    btnFour.setAttribute("style", "background-color:white; border:none; color:black; font-size:30px;");
 
     timer();
     btnOne.addEventListener("click", handleClick);
