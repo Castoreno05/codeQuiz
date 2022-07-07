@@ -44,7 +44,7 @@ function playGame() {
     displayQuestion()
 
     // console.log("click");
-   
+
     body.appendChild(h2El);
     body.appendChild(ordered);
     body.appendChild(btnOne);
@@ -117,7 +117,7 @@ var questions = [
     },
     {
         title: "A very useful tool used in development and debugging for printing content to the debugger is:",
-        options: ["JavaScript", "Terminal/Bash", "for loops",  "console.log"],
+        options: ["JavaScript", "Terminal/Bash", "for loops", "console.log"],
         correctAnswer: "console.log"
     }
 
@@ -125,7 +125,7 @@ var questions = [
 
 
 function handleClick(event) {
-    if(questions[questionIndex].correctAnswer === event.target.innerHTML) {
+    if (questions[questionIndex].correctAnswer === event.target.innerHTML) {
         totalScore += 20;
         console.log(totalScore);
     }
@@ -134,8 +134,8 @@ function handleClick(event) {
         secondsLeft -= 10;
     }
 
-    if(questionIndex === questions.length - 1) {
-        // endGame();
+    if (questionIndex === questions.length - 1) {
+        endGame();
     }
     else {
         questionIndex++;
@@ -155,11 +155,28 @@ function resetGame() {
 
 // need a function that will display the score
 
-// function endGame() {
-    
-//     if()
+var h1El = document.createElement("h1");
+var paragraph = document.createElement("p");
 
-// }
+function endGame() {
+
+    if (totalScore) {
+
+        body.removeChild(h2El);
+        body.removeChild(ordered);
+        body.appendChild(h1El);
+        body.appendChild(paragraph);
+
+        paragraph.textContent = "This is the End of the game! Good Job!"
+        // need to find a way to clear the timer at the end
+
+        // Need to display the total score 
+    }
+
+
+
+    console.log("This is your score")
+}
 
 // When inside the question. Find a way for only the correct selected answer to allow you to move forward.
 // Find a way to have the wrong answers prompt: "Incorrect"
