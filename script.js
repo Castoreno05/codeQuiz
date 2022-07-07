@@ -97,7 +97,7 @@ var questionIndex = 0;
 var questions = [
     {
         title: "Commonly used data types do NOT include:",
-        options: ["Quotes", "Parenthesis", "Alerts", "Square Brackets"],
+        options: ["Square Brackets", "Parenthesis", "Alerts", "Quotes"],
         correctAnswer: "Alerts"
     },
     {
@@ -174,7 +174,7 @@ function endGame() {
         h1El.setAttribute("style", "width:100%; height:200px; align-items:center; display:flex; flex-direction:column; justify-content:center; font-family: 'Permanent Marker', 'cursive';");
         // need to find a way to clear the timer at the end
 
-        // Need to display the total score 
+        // Need to Display and Save the total score 
     }
 
     console.log(totalScore);
