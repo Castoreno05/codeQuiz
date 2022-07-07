@@ -1,48 +1,25 @@
-
-var questions = [
-
-    {
-        title: "Commonly used data types do NOT include:",
-        options: ["Quotes", "Parenthesis", "Alerts", "Square Brackets"],
-        correctAnswer: "Alerts"
-    },
-
-    {
-        title: "The condition in an if/else statment is enclosed in ___.",
-        options: ["Quotes", "Parenthesis", "Curly Brackets", "Square Brackets"],
-        correctAnswer: "Parenthesis"
-    },
-
-    {
-        title: "String values must be closed within _____ when being assigned to a variable.",
-        options: ["Quotes", "Curly brackets", "Commas", "Parenthesis"],
-        correctAnswer: "Quotes"
-    },
-
-    {
-        titie: "Arrays in JavaScript can be used to store.",
-        options: ["Numbers and strings", "Other arrays", "Booleans", "All of the above"],
-        correctAnswer: "All of the above"
-    },
-
-    {
-        title: "A very useful tool used in development and debugging for printing content to the debugger is:",
-        options: ["JavaScript", "Terminal/Bash", "for loops",  "console.log"],
-        caorrectAnswer: "console.log"
-    }
-
-]
-
-// To track on which question user is
-
 // "Play Game" button and timer. ---------------------------------
 var totalScore = 0;
-var questionIndex = 0;
 var secondsLeft = 60;
+// Grabbing the ID of the th span
 var timerEl = document.getElementById("timer");
+// Button to play game
 var startGame = document.querySelector("#startGame");
+// Button to reset game
 var btnReset = document.querySelector("#resetGame");
 // console.log(startGame);
+
+// Timer 
+function timer() {
+    var timerInterval = setInterval(function () {
+        secondsLeft--;
+        timerEl.textContent = secondsLeft;
+
+        if (secondsLeft === 0) {
+            clearInterval(timerInterval);
+        }
+    }, 1000);
+}
 
 var body = document.body;
 var h2El = document.createElement("h2");
@@ -58,37 +35,10 @@ var btnTwo = document.createElement("button");
 var btnThree = document.createElement("button");
 var btnFour = document.createElement("button");
 
+// Button is assigned an eventListener
 startGame.addEventListener("click", playGame);
 
-function displayQuestion() {
-    // 
-    h2El.textContent = questions[questionIndex].title;
-    btnOne.textContent = questions[questionIndex].options[0];
-    btnTwo.textContent = questions[questionIndex].options[1];
-    btnThree.textContent = questions[questionIndex].options[2];
-    btnFour.textContent = questions[questionIndex].options[3];
-
-}
-
-function handleClick(event) {
-    if(questions[questionIndex].correctAnswer === event.target.innerHTML) {
-        totalScore += 20;
-        console.log(totalScore);
-    }
-    else {
-        // reduce the timer
-        secondsLeft -= 10;
-    }
-
-    if(questionIndex === questions.length - 1) {
-        resetGame();
-    }
-    else {
-        questionIndex++;
-        displayQuestion();
-    }
-}
-
+// Function to start the game and display the first question 
 function playGame() {
 
     displayQuestion()
@@ -131,6 +81,68 @@ function playGame() {
     btnFour.addEventListener("click", handleClick);
 }
 
+
+function displayQuestion() {
+    // 
+    h2El.textContent = questions[questionIndex].title;
+    btnOne.textContent = questions[questionIndex].options[0];
+    btnTwo.textContent = questions[questionIndex].options[1];
+    btnThree.textContent = questions[questionIndex].options[2];
+    btnFour.textContent = questions[questionIndex].options[3];
+
+}
+
+var questionIndex = 0;
+
+var questions = [
+    {
+        title: "Commonly used data types do NOT include:",
+        options: ["Quotes", "Parenthesis", "Alerts", "Square Brackets"],
+        correctAnswer: "Alerts"
+    },
+    {
+        title: "The condition in an if/else statment is enclosed in ___.",
+        options: ["Quotes", "Parenthesis", "Curly Brackets", "Square Brackets"],
+        correctAnswer: "Parenthesis"
+    },
+    {
+        title: "String values must be closed within _____ when being assigned to a variable.",
+        options: ["Quotes", "Curly brackets", "Commas", "Parenthesis"],
+        correctAnswer: "Quotes"
+    },
+    {
+        titie: "Arrays in JavaScript can be used to store.",
+        options: ["Numbers and strings", "Other arrays", "Booleans", "All of the above"],
+        correctAnswer: "All of the above"
+    },
+    {
+        title: "A very useful tool used in development and debugging for printing content to the debugger is:",
+        options: ["JavaScript", "Terminal/Bash", "for loops",  "console.log"],
+        correctAnswer: "console.log"
+    }
+
+]
+
+
+function handleClick(event) {
+    if(questions[questionIndex].correctAnswer === event.target.innerHTML) {
+        totalScore += 20;
+        console.log(totalScore);
+    }
+    else {
+        // reduce the timer
+        secondsLeft -= 10;
+    }
+
+    if(questionIndex === questions.length - 1) {
+        // endGame();
+    }
+    else {
+        questionIndex++;
+        displayQuestion();
+    }
+}
+
 // Reset function and eventListener
 
 btnReset.addEventListener("click", resetGame);
@@ -143,18 +155,11 @@ function resetGame() {
 
 // need a function that will display the score
 
-// Timer 
+// function endGame() {
+    
+//     if()
 
-function timer() {
-    var timerInterval = setInterval(function () {
-        secondsLeft--;
-        timerEl.textContent = secondsLeft;
-
-        if (secondsLeft === 0) {
-            clearInterval(timerInterval);
-        }
-    }, 1000);
-}
+// }
 
 // When inside the question. Find a way for only the correct selected answer to allow you to move forward.
 // Find a way to have the wrong answers prompt: "Incorrect"
