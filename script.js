@@ -111,7 +111,7 @@ var questions = [
         correctAnswer: "Quotes"
     },
     {
-        titie: "Arrays in JavaScript can be used to store.",
+        title: "Arrays in JavaScript can be used to store.",
         options: ["Numbers and strings", "Other arrays", "Booleans", "All of the above"],
         correctAnswer: "All of the above"
     },
