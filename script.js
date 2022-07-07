@@ -157,6 +157,8 @@ function resetGame() {
 
 var h1El = document.createElement("h1");
 var paragraph = document.createElement("p");
+var saveBtn = document.createElement("button");
+
 
 function endGame() {
 
@@ -165,11 +167,13 @@ function endGame() {
         body.removeChild(h2El);
         body.removeChild(ordered);
         body.appendChild(h1El);
-        body.appendChild(paragraph);
+        // body.appendChild(paragraph);
+        body.appendChild(saveBtn);
 
-        h1El.textContent = "SCORE:";
-        paragraph.textContent = totalScore;
-
+        h1El.textContent = "SCORE: " +  totalScore;
+        // paragraph.textContent = totalScore;
+        saveBtn.textContent = "Save";
+        
         paragraph.setAttribute("style", "font-size:35px; width:100%; height:200px; align-items:center; display:flex; flex-direction:column; font-family: 'Permanent Marker', 'cursive';");
         h1El.setAttribute("style", "width:100%; height:200px; align-items:center; display:flex; flex-direction:column; justify-content:center; font-family: 'Permanent Marker', 'cursive';");
         // need to find a way to clear the timer at the end
