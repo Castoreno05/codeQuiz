@@ -9,18 +9,6 @@ var startGame = document.querySelector("#startGame");
 var btnReset = document.querySelector("#resetGame");
 // console.log(startGame);
 
-// Timer 
-function timer() {
-    var timerInterval = setInterval(function () {
-        secondsLeft--;
-        timerEl.textContent = secondsLeft;
-
-        if (secondsLeft === 0) {
-            clearInterval(timerInterval);
-        }
-    }, 1000);
-}
-
 var body = document.body;
 var h2El = document.createElement("h2");
 var ordered = document.createElement("ol");
@@ -174,15 +162,43 @@ function endGame() {
         // paragraph.textContent = totalScore;
         saveBtn.textContent = "Save";
         
+        saveBtn.setAttribute("style", "background-color:lightblue; border:none; color:black; font-size:30px; margin-left:50%; border-radius:15px;");
         paragraph.setAttribute("style", "font-size:35px; width:100%; height:200px; align-items:center; display:flex; flex-direction:column; font-family: 'Permanent Marker', 'cursive';");
-        h1El.setAttribute("style", "width:100%; height:200px; align-items:center; display:flex; flex-direction:column; justify-content:center; font-family: 'Permanent Marker', 'cursive';");
+        h1El.setAttribute("style", "width:100%; height:200px; align-items:center; display:flex; flex-direction:column; justify-content:center; font-family: 'Permanent Marker', 'cursive'; margin-left:1.5%");
         // need to find a way to clear the timer at the end
 
         // Need to Display and Save the total score 
     }
 
-    console.log(totalScore);
 }
+
+saveBtn.addEventListener("click", function(event) {
+    event.preventDefault();
+
+    body.removeChild(h1El);
+
+
+    if(saveBtn) {
+        localStorage.setItem("total score", totalScore);
+        localStorage.setItem("seconds left", secondsLeft);
+        clearInterval(timerInterval);
+    }
+    // Replace the resetGame so that it goes toa  function that displays highscores
+    resetGame();
+});
+var timerInterval;
+// Timer 
+function timer() {
+        timerInterval = setInterval(function () {
+        secondsLeft--;
+        timerEl.textContent = secondsLeft;
+
+        // if (secondsLeft === 0) {
+        //     clearTimeout(timerInterval);
+        // }
+    }, 1000);
+}
+
 
 // When inside the question. Find a way for only the correct selected answer to allow you to move forward.
 // Find a way to have the wrong answers prompt: "Incorrect"
