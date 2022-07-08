@@ -12,6 +12,7 @@ var btnReset = document.querySelector("#resetGame");
 var body = document.body;
 var h2El = document.createElement("h2");
 var ordered = document.createElement("ol");
+var highScores = document.createElement("ol");
 // create ordered list items
 var li1 = document.createElement("li");
 var li2 = document.createElement("li");
@@ -150,7 +151,7 @@ var saveBtn = document.createElement("button");
 
 function endGame() {
 
-    if (totalScore) {
+    if (totalScore >= 80) {
 
         body.removeChild(h2El);
         body.removeChild(ordered);
@@ -158,47 +159,65 @@ function endGame() {
         // body.appendChild(paragraph);
         body.appendChild(saveBtn);
 
-        h1El.textContent = "SCORE: " +  totalScore;
+        h1El.textContent = "SCORE: " + totalScore;
         // paragraph.textContent = totalScore;
         saveBtn.textContent = "Save";
-        
+
         saveBtn.setAttribute("style", "background-color:lightblue; border:none; color:black; font-size:30px; margin-left:50%; border-radius:15px;");
-        paragraph.setAttribute("style", "font-size:35px; width:100%; height:200px; align-items:center; display:flex; flex-direction:column; font-family: 'Permanent Marker', 'cursive';");
+        // paragraph.setAttribute("style", "font-size:35px; width:100%; height:200px; align-items:center; display:flex; flex-direction:column; font-family: 'Permanent Marker', 'cursive';");
         h1El.setAttribute("style", "width:100%; height:200px; align-items:center; display:flex; flex-direction:column; justify-content:center; font-family: 'Permanent Marker', 'cursive'; margin-left:1.5%");
         // need to find a way to clear the timer at the end
 
         // Need to Display and Save the total score 
+    }else {
+        resetGame();
     }
 
 }
 
-saveBtn.addEventListener("click", function(event) {
+saveBtn.addEventListener("click", function (event) {
     event.preventDefault();
 
     body.removeChild(h1El);
 
 
-    if(saveBtn) {
+    if (saveBtn) {
         localStorage.setItem("total score", totalScore);
         localStorage.setItem("seconds left", secondsLeft);
         clearInterval(timerInterval);
     }
     // Replace the resetGame so that it goes toa  function that displays highscores
-    resetGame();
+    // resetGame();
+    highscores();
 });
 var timerInterval;
 // Timer 
 function timer() {
-        timerInterval = setInterval(function () {
+    timerInterval = setInterval(function () {
         secondsLeft--;
         timerEl.textContent = secondsLeft;
 
-        // if (secondsLeft === 0) {
-        //     clearTimeout(timerInterval);
-        // }
+        if (secondsLeft === 0) {
+            clearTimeout(timerInterval);
+            endGame();
+        }
     }, 1000);
 }
 
+function highscores() {
+    if (saveBtn) {
+
+        // body.removeChild(h1El);
+        body.removeChild(saveBtn);
+
+        body.appendChild(h1El);
+        body.appendChild(highScores);
+
+        h1El.textContent = "HIGH SCORES!!";
+    }
+
+
+}
 
 // When inside the question. Find a way for only the correct selected answer to allow you to move forward.
 // Find a way to have the wrong answers prompt: "Incorrect"
