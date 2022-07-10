@@ -12,7 +12,7 @@ var btnReset = document.querySelector("#resetGame");
 var body = document.body;
 var h2El = document.createElement("h2");
 var ordered = document.createElement("ol");
-var highScores = document.createElement("ol");
+var highScores = document.createElement("ul");
 // create ordered list items
 var li1 = document.createElement("li");
 var li2 = document.createElement("li");
@@ -163,10 +163,11 @@ function endGame() {
 
     h1El.textContent = "SCORE: " + totalScore;
     // paragraph.textContent = totalScore;
-    saveBtn.textContent = "Save";
+    saveBtn.textContent = "Save Initials";
 
-    saveBtn.setAttribute("style", "background-color:lightblue; border:none; color:black; font-size:30px; margin-left:50%; border-radius:15px;");
-    // paragraph.setAttribute("style", "font-size:35px; width:100%; height:200px; align-items:center; display:flex; flex-direction:column; font-family: 'Permanent Marker', 'cursive';");
+
+    saveBtn.setAttribute("style", "background-color:lightblue; border:none; color:black; font-size:30px; margin-left:35%; border-radius:15px;");
+    userInput.setAttribute("style", "margin-left:25%;");
     h1El.setAttribute("style", "width:100%; height:200px; align-items:center; display:flex; flex-direction:column; justify-content:center; font-family: 'Permanent Marker', 'cursive'; margin-left:1.5%");
     // need to find a way to clear the timer at the end
     save();
@@ -179,8 +180,6 @@ function endGame() {
 
 function save() {
 
-
-
     saveBtn.addEventListener("click", function (event) {
         event.preventDefault();
 
@@ -192,14 +191,15 @@ function save() {
         body.appendChild(highScores);
         highScores.appendChild(li1);
         highScores.appendChild(li2);
-        highScores.appendChild(li3);
-        highScores.appendChild(li4);
+        
 
-        h2El.textContent = "Highscores!"
-        li1.textContent
-
+        h2El.textContent = "Highscore!"
+        li1.textContent = "Initials: " + userInput.value; 
+        li2.textContent = "Total Score: " + totalScore;
         h2El.setAttribute("style", "font-size:25px; width:100%; height:200px; align-items:center; display:flex; flex-direction:column; justify-content:center; font-family: 'Permanent Marker', 'cursive'; margin-left:1.5%");
-
+        highScores.setAttribute("style", "width:100%; height:200px; align-items:center; display:flex; flex-direction:column; font-family: 'Permanent Marker', 'cursive';");
+        li1.setAttribute("style", "width:100%; height:200px; align-items:center; display:flex; flex-direction:column; font-family: 'Permanent Marker', 'cursive';")
+        li2.setAttribute("style", "width:100%; height:200px; align-items:center; display:flex; flex-direction:column; font-family: 'Permanent Marker', 'cursive';")
         clearInterval(timerInterval);
 
         localStorage.setItem("total score", totalScore);
