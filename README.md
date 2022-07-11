@@ -1,4 +1,4 @@
-# Code-Quiz
+# codeQuiz
 
 Press play! This module will ask you 5 questions that will put your JavaScript, Developer Tools, and basic coding skills to the test.
 
@@ -12,13 +12,24 @@ Save your initials to the high score, reset and play again!
 
 # How It Works
 
-![codeQuiz](./Images/Game%20Intro.png)
+![codeQuiz](./Images/Start%20Game.png)
 
-![codeQuiz](./Images/Start%20Game%20.png)
+![codeQuiz](./Images/Questions%26Timer.png)
 
-![codeQuiz](./Images/Missed%20Question.png)
+![codeQuiz](./Images/TimeDrop.png)
 
-![codeQuiz](./Images/Initials.png)
+![codeQuiz](./Images/Initials%20.png)
 
 ![codeQuiz](./Images/End%20Game.png)
 
+---
+
+# Contributors
+
+Matthew Castoreno <matthew.castoreno@yahoo.com>
+
+---
+
+# Demo
+
+Demo to the codeQuiz module https://castoreno05.github.io/codeQuiz/
