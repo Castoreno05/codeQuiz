@@ -33,3 +33,11 @@ Matthew Castoreno <matthew.castoreno@yahoo.com>
 # Demo
 
 Demo to the codeQuiz module https://castoreno05.github.io/codeQuiz/
+
+---
+
+#License & Copyright
+
+Copyright (c) 2022 Castoreno05
+
+---
