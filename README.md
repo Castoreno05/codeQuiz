@@ -12,5 +12,13 @@ Save your initials to the high score, reset and play again!
 
 # How It Works
 
+![codeQuiz](./Images/Game%20Intro.png)
 
+![codeQuiz](./Images/Start%20Game%20.png)
+
+![codeQuiz](./Images/Missed%20Question.png)
+
+![codeQuiz](./Images/Initials.png)
+
+![codeQuiz](./Images/End%20Game.png)
 
