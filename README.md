@@ -22,7 +22,7 @@ This codeQuiz module will ask you 5 questions that will put your JavaScript, Dev
 
 ## Installation 
 
-Use the systems terminal to enter the command "git clone" followed by the applications URL link (ex: https://github.com/Castoreno05/codeQuiz.git).
+Use the systems terminal to navigate to intended folder then enter the command "git clone" followed by the applications git URL link (ex: https://github.com/Castoreno05/codeQuiz.git). Once complete you will notice a populated folder with the name and files to codeQuiz application.
 
 ## Demo
 
