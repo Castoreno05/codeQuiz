@@ -4,7 +4,7 @@ As a coding bootcamp student
 
 I wanted to take a timed quiz on Javascript fundamentals that stores high scores
 
-So that I can guage my progress then compare it to my peers
+So that I can guage my progress compared to my peers
 
 ## How It Works
 
@@ -24,13 +24,13 @@ This codeQuiz module will ask you 5 questions that will put your JavaScript, Dev
 
 Use the systems terminal to enter the command "git clone" followed by the applications URL link (ex: https://github.com/Castoreno05/codeQuiz.git).
 
-## Contributors
-
-Matthew Castoreno <matthew.castoreno@yahoo.com>
-
 ## Demo
 
 Demo to the codeQuiz module https://castoreno05.github.io/codeQuiz/
+
+## Contributors
+
+Matthew Castoreno <matthew.castoreno@yahoo.com>
 
 ## License & Copyright
 
