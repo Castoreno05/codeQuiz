@@ -1,7 +1,9 @@
 # codeQuiz
 
 As a coding bootcamp student
+
 I wanted to take a timed quiz on Javascript fundamentals that stores high scores
+
 So that I can guage my progress then compare it to my peers
 
 ## How It Works
